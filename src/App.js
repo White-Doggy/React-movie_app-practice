@@ -1,7 +1,20 @@
+import { render } from '@testing-library/react';
 import React from 'react';
 
-function App() {
-  return <div className="App" />;
+class App extends React.Component {
+  state = {
+    isLoading: true
+  };
+  componentDidMount() {
+    setTimeout(()=>{
+      this.setState({ isLoading: false});
+    },6000)
+  }
+
+  render() {
+    const { isLoading } = this.state;
+    return <div>{isLoading ? "Loading..." : "We are Ready"}</div>;
+  }
 }
 
 export default App;
