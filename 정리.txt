@@ -10,3 +10,8 @@ fetch 윗단에 존재하는 layer와 같은 개체
 활용 yts
 
 style component
+
+
+
+react router 활용
+이경우 화면 이동용으로 사용함, 특정상황에 특정 컴포넌트 호출
